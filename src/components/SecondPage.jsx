@@ -7,10 +7,10 @@ const secondPage = () => {
   return (
     <div>
         <input type="text" 
-         placeholder='Enter name'
+         placeholder="Enter a name..."
          onChange={(e)=>{setName(e.target.value)}}/>
 
-        <button onClick={()=>setUserName([...userName,name])}>
+        <button onClick={()=>setUserName(name)}>
         Submit</button>
     </div>
   )

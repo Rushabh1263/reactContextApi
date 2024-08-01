@@ -6,11 +6,7 @@ const Contact = () => {
   return (
     <div>
        <h1>This is a contact page</h1>
-       {
-        userName.map((list)=>{
-           <h1>{list}</h1>
-        })
-       }
+       <h2>Name : {userName}</h2>
 
     </div>
   )
