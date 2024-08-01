@@ -12,18 +12,12 @@ import Navbar from "./components/Navbar"
 function App() {
  
 
-const[userName,setUserName] =useState([ "abc","cde"])
+const[userName,setUserName] =useState("")
   return (
    <>
-     {userName}
 
-    {
-       userName.map((list)=>{
-           <h1>{list} </h1>
-       })
-     }
      
-     {/* <Infocontext.Provider value={{userName,setUserName}}>
+     <Infocontext.Provider value={{userName,setUserName}}>
      <Router>
         <Navbar/>
         <Routes>
@@ -32,7 +26,7 @@ const[userName,setUserName] =useState([ "abc","cde"])
             <Route path="/secondPage" element={<SecondPage/>}/>
         </Routes>
      </Router>
-     </Infocontext.Provider> */}
+     </Infocontext.Provider>
    </>
   )
 }
